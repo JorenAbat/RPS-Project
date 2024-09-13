@@ -1,0 +1,35 @@
+/* style.css */
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.choice h4 {
+    margin-right: 10px;
+}
+
+.choice-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.choice-images img {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.content {
+    width: 50%;
+    height: auto;
+    display: none;
+    margin: 20px auto 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

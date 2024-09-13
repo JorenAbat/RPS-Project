@@ -1,0 +1,43 @@
+<!-- Index page -->
+{% extends "layout.html" %}
+
+{% block title %}
+    Play!
+{% endblock %}
+
+{% block main %}
+
+    <body class="bg-light">
+        <main class="container py-5 text-center">
+            <div class="container mt-5">
+                <h1 class="text-center mb-4">Rock Paper Scissors</h1>
+                <div class="row justify-content-center">
+                <!-- Form for choosing object -->
+                    <form action="/play" method="post" class="form-inline">
+                        <label for="choice" class="mr-2">Choose: </label>
+                        <select name="choice" id="choice" class="form-control mr-2" onchange="showContent()">
+                            <option value="None">Select an Object</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Paper">Paper</option>
+                            <option value="Scissors">Scissors</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Select</button>
+                    </form>
+                </div>
+            <!-- Display image when option is selected. Modified through JavaScript -->
+                <div id="Rock" class="content">
+                    <h2>Ready to smash em?</h2>
+                    <img src="/static/images/rock.png" alt="Rock">
+                </div>
+                <div id="Paper" class="content">
+                    <h2>Cover em up!</h2>
+                    <img src="/static/images/paper.png" alt="Image 2">
+                </div>
+                <div id="Scissors" class="content">
+                    <h2>Cut them to shreds!</h2>
+                    <img src="/static/images/scissors.png" alt="Image 3">
+                </div>
+            </div>
+        </main>
+    </body>
+{% endblock %}

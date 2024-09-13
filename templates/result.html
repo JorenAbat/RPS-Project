@@ -1,0 +1,30 @@
+<!-- Result page to show game outcome -->
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+
+    <body style="background-color: {{bg_colour}};">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Your choice: {{ user_choice }}</h2>
+            <div class="row">
+                <div class="col text-center">
+                    <h4>Your Choice</h4>
+                    <img src="{{ url_for('static', filename=user_img) }}" alt="{{ user_choice }}">
+                </div>
+                <div class="col text-center">
+                    <h4>Computer's Choice</h4>
+                    <img src="{{ url_for('static', filename=computer_img) }}" alt="{{ computer_choice }}">
+                </div>
+            </div>
+            <h1 class="text-center mt-4">{{ flavour_text }}</h2>
+            <h2 class="text-center mt-4">{{ result }}</h2>
+            <div class="text-center">
+                <a href="/" class="btn btn-primary mt-4">Play again</a>
+            </div>
+        </div>
+    </body>
+{% endblock %}
