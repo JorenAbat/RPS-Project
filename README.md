@@ -1,5 +1,6 @@
 # CS50 Final Project: Rock Paper Scissors
 ## Video Demo:  https://youtu.be/ZcJYZ04Xo9s
+## Deployed Site: https://jorenabat.pythonanywhere.com/
 ## Description:
 ### My journey through making this project:
 For my final project, I wanted to create a simple game using all the skills that I have gathered throughout the course. I plan on persuing web development so I wanted to incorporate HTML, CSS, JavaScript and the web framework we learned which was Flask.
